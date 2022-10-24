@@ -6,14 +6,14 @@ public class StudentApp {
     public static void main(String[] args) {
         System.out.println("Please Enter A Student Name");
         Scanner input = new Scanner(System.in);
-        String studentName = input.next();
+        String studentName = input.nextLine();
 
         System.out.println("Please Enter A Student Email");
-        String studentEmail = input.next();
+        String studentEmail = input.nextLine();
         System.out.println(studentEmail);
 
         System.out.println("Please Enter A Student Course");
-        String studentCourse = input.next();
+        String studentCourse = input.nextLine();
         System.out.println(studentCourse);
 
     }
