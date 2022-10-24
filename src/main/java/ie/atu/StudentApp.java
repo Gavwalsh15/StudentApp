@@ -19,25 +19,43 @@ public class StudentApp {
         infoStudent.setStudCourse(studentCourse);
 
 
-        Student infoStudent2 = new Student();
+
         System.out.println("Please Enter Second Student Name");
         String studentName2 = input.nextLine();
-        infoStudent.setStudName(studentName2);
+        Student infoStudent2 = new Student(studentName2);
+        //infoStudent2.setStudName(studentName2);
 
         System.out.println("Please Enter Second Student Email");
         String studentEmail2 = input.nextLine();
-        infoStudent.setStudEmail(studentEmail2);
+        infoStudent2.setStudEmail(studentEmail2);
 
         System.out.println("Please Enter Second Student Course");
         String studentCourse2 = input.nextLine();
-        infoStudent.setStudCourse(studentCourse2);
+        infoStudent2.setStudCourse(studentCourse2);
 
-        System.out.println(studentName);
-        System.out.println(studentEmail);
-        System.out.println(studentCourse);
-        System.out.println(studentName2);
-        System.out.println(studentEmail2);
-        System.out.println(studentCourse2);
+
+        System.out.println("Please Enter Third Student Name");
+        String studentName3 = input.nextLine();
+        System.out.println("Please Enter Third Student Email");
+        String studentEmail3 = input.nextLine();
+        System.out.println("Please Enter Third Student Course");
+        String studentCourse3 = input.nextLine();
+        Student infoStudent3 = new Student(studentName3, studentEmail3, studentCourse3);
+
+
+        System.out.println("First Student Name - " + infoStudent.getStudName());
+        System.out.println("First Student Email - " + infoStudent.getStudEmail());
+        System.out.println("First Student Course - " + infoStudent.getStudCourse());
+
+        System.out.println("Second Student Name - " + infoStudent2.getStudName());
+        System.out.println("Second Student Email - " + infoStudent2.getStudEmail());
+        System.out.println("Second Student Course - " + infoStudent2.getStudCourse());
+
+        System.out.println("Third Student Name - " + infoStudent3.getStudName());
+        System.out.println("Third Student Email - " + infoStudent3.getStudEmail());
+        System.out.println("Third Student Course - " + infoStudent3.getStudCourse());
+
+
 
     }
 }
