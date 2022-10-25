@@ -28,4 +28,20 @@ public class Student {
     public void setStudCourse(String studCourse) {
         this.studCourse = studCourse;
     }
+
+    public Student(String studName) {
+        this.studName = studName;
+    }
+
+    public Student() {
+        this.studName = "";
+        this.studEmail= "";
+        this.studCourse= "";
+    }
+
+    public Student(String studName, String studEmail, String studCourse) {
+        this.studName = studName;
+        this.studEmail = studEmail;
+        this.studCourse = studCourse;
+    }
 }
